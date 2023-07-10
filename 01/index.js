@@ -29,7 +29,7 @@ const Users = () => {
       <h1>Map users from data array</h1>
       {
         data.map(obj => (
-          <div>
+          <div key={obj.name}>
             <div>
               <b>Name: </b><span>{ obj.name }</span>
             </div>
